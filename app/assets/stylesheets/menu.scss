@@ -8,17 +8,17 @@
 }
 
 nav.menu {
-  position: absolute;
-  width: 210px;
-  top: 44px;
-  left: -300px;
-  padding: 20px 0 20px 0;
+  position: fixed;
+  width: 12rem;
+  top: 2rem;
+  left: -18.75rem;
+  padding: 1.25rem 0 1.25rem 0;
   background-color: $blue;
   box-shadow: $blue-shaddow;
   color: $white;
   transition: 0.3s all;
 }
 
-.menu_show {
+.menu-show {
   left: 0 !important;
 }

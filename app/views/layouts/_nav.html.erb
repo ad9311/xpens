@@ -1,8 +1,8 @@
-<div class="pos-fixed top-0 topbar">
+<div class="pos-sticky top-0 topbar">
   <div class="navbar-height d-flex justify-between align-items-center pcon-4">
     <% if user_signed_in? %>
       <ul class="d-none-2">
-        <li><input class="ham" type="button" value="&#9776"></li>
+        <li><input id="ham" class="ham" type="button" value="&#9776"></li>
       </ul>
       <ul>
         <li class="pr-1 fs-2"><%= link_to current_user.name, root_path %></li>
@@ -21,7 +21,7 @@
   </div>
 </div>
 <% if user_signed_in? %>
-  <nav class="menu">
+  <nav id="menu" class="menu">
     <ul class="d-flex flex-column">
       <li class="plr-2 ptb-1 fs-2">
         <button class="green-button"><%= link_to "Expenses", expenses_path %></button>
@@ -38,4 +38,3 @@
     </ul>
   </nav>
 <% end %>
-<div class="div-space"></div>
